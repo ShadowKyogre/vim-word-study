@@ -4,7 +4,7 @@ if !exists('s:word_study_did_init')
 	let s:word_study_did_init = 1
 endif
 
-function! GetVisualSelection()
+function! WordStudy#GetVisualSelection()
   " Why is this not a built-in Vim script function?!
   let [lnum1, col1] = getpos("'<")[1:2]
   let [lnum2, col2] = getpos("'>")[1:2]
